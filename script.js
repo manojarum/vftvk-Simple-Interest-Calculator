@@ -11,10 +11,10 @@ function compute()
     var interest = p * rate * years /100;
     var year = new Date().getFullYear()+parseInt(years);
     prince = "<span class=\"highlightme\">"+p+"<\/span\>"
-    rate = "<span class=\"highlightme\">"+rate+"<\/span\>"
+    rate = "<span class=\"highlightme\">"+rate+"%"+"<\/span\>"
     interest = "<span class=\"highlightme\">"+interest+"<\/span\>"
     year = "<span class=\"highlightme\">"+year+"<\/span\>"
-    document.getElementById("result").innerHTML="If you deposit "+prince+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>"
+    document.getElementById("result").innerHTML="If you deposit "+prince+",\<br\>at an interest rate of "+rate+"\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>"
 }
 
 function updateRate()
